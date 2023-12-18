@@ -137,6 +137,7 @@ aside img:hover {
 
   color: var(--primary-color);
   background: none;
+  font-weight: 400;
 }
 
 @media (max-width: 767px) {
@@ -178,6 +179,7 @@ aside img:hover {
 
   color: var(--primary-color);
   background: none;
+  font-weight: 400;
 
   position: relative;
 }
@@ -256,6 +258,7 @@ aside img:hover {
   height: 40px;
   color: white;
   background: var(--primary-color);
+  font-weight: 400;
 }
 
 .home-information-card-button:hover::after {

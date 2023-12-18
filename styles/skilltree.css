@@ -19,7 +19,8 @@
   font-size: var(--text-size-h2);
   color: white;
   letter-spacing: 10px;
-  padding: 15px 30px;
+  padding: 10px 20px;
+  font-weight: 300;
   background: rgb(128, 128, 128, 0.7);
   border-radius: 5px;
 }
@@ -78,8 +79,6 @@
 }
 
 .skilltree {
-  /* width: 300px; */
-  /* position: relative; */
   margin: 50px auto 0px;
   display: flex;
   flex-direction: column;
@@ -99,7 +98,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .icon-select {
@@ -290,11 +289,9 @@
 
 @keyframes cardShowup {
   from {
-    /* top: -100px; */
     opacity: 0;
   }
   to {
-    /* top: 0; */
     opacity: 1;
   }
 }
