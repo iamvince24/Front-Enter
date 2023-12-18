@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="Shortcut Icon"
+      type="image/x-icon"
+      href="../part2/img/favicon.ico"
+    />
+    <link <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link <link rel="stylesheet" type="text/css" href="./styles/contact.css" />
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqCh0yDFvsb3u1_Wn418s_4icoZ61rAiU&callback=initMap"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Emr4nsGWX_CVxzxuB");
+      })();
+    </script>
+    <title>技能樹</title>
+  </head>
+  <body id="body-main-content">
+    <header>
+      <figure>
+        <a href="./index.html" id="member-home"
+          ><img
+            class="logo click-effect"
+            src="./img/FE_logo-4.png"
+            alt="FE_logo"
+        /></a>
+      </figure>
+      <nav>
+        <li>
+          <a class="click-effect" id="member-article" href="./article.html"
+            >探索</a
+          >
+        </li>
+        <li>
+          <a class="click-effect" id="member-skilltree" href="./skilltree.html"
+            >技能樹</a
+          >
+        </li>
+        <li><a class="click-effect" id="login-btn">登入</a></li>
+        <img
+          class="header-search-icon click-effect"
+          id="header-search-icon"
+          src="./img/FE_search_green.png"
+          alt="FE_search_green"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <section class="keyvisual">
+        <div class="keyvisual-content">聯絡洽談</div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-form">
+          <p class="form-title">聯絡我們</p>
+          <p class="form-text">想進一步了解我們？歡迎來信與我們聯絡。</p>
+          <form class="form-main">
+            <input
+              type="text"
+              placeholder="姓名"
+              class="form-input"
+              id="input-name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="信箱"
+              class="form-input"
+              id="input-mail"
+              required
+            />
+            <input
+              type="text"
+              placeholder="信件主旨"
+              class="form-input"
+              id="input-topic"
+              required
+            />
+            <textarea
+              class="form-input"
+              id="input-content"
+              name="contacts"
+              placeholder="信件內容"
+              required
+            ></textarea>
+            <button class="form-button click-effect" type="submit">送出</button>
+          </form>
+        </div>
+        <div class="contact-map">
+          <div class="map-address">
+            <img
+              class="location-icon"
+              src="./img/location_icon_one.png"
+              alt="location"
+            />
+            <p>106台北市大安區和平東路一段162號</p>
+          </div>
+          <div class="map-google"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="top-icon-section">
+        <img
+          class="top-icon click-effect"
+          id="top-icon"
+          src="./img/FE_TOP.png"
+          alt="pen"
+        />
+      </section>
+      <nav>
+        <li>
+          <a href="./contact.html" id="member-contact">聯絡我們</a>
+        </li>
+        <li><span>M</span> 0975-282-356</li>
+        <li>
+          <span>E </span
+          ><a href="mailto:mynameisvince24@gmail.com"
+            >mynameisvince24@gmail.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100079762316652"
+            target="_blank"
+          >
+            <img src="./img/new-facebook-blue.svg" alt="pen" />
+          </a>
+          <a href="https://line.me/ti/p/v9ETm_J1dk" target="_blank">
+            <img src="./img/FE_line.png" alt="pen" />
+          </a>
+        </li>
+      </nav>
+    </footer>
+
+    <!-- <div id="loading-container">
+      <div class="color-block color-block-primary"></div>
+      <div class="color-block color-block-secondary"></div>
+      <img class="loader" src="./img/FE_logo-4.png" alt="loader" />
+    </div> -->
+
+    <aside id="aside-test-go">
+      <img class="aside-img click-effect" src="./img/FE_test_go.png" />
+    </aside>
+
+    <div id="search-container" style="display: none">
+      <div class="search-container-white">
+        <label>Search</label>
+        <form class="input-container">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="請填入搜尋文字"
+            required
+          />
+          <img
+            class="voice-icon click-effect"
+            id="voice-icon"
+            src="../img/Microphone.svg"
+            alt="FE_search_green"
+          />
+          <img
+            class="search-icon-inner click-effect"
+            id="search-icon-inner"
+            src="../img/FE_search_green.png"
+            alt="FE_search_green"
+          />
+        </form>
+      </div>
+      <div class="search-container-overlay"></div>
+    </div>
+
+    <div class="test-section">
+      <div class="test-card-green"></div>
+      <div class="test-card-gray"></div>
+      <div class="test-card-instruction">
+        <div class="start-title">測驗說明</div>
+        <div class="start-text">
+          點選「開始測驗」後，系統將根據你的回答，找出最適合你的學習環境，並顯示有多少百分比的合適度。
+        </div>
+        <button class="test-start-btn btn-effect click-effect">開始測驗</button>
+      </div>
+      <div class="test-card-list"></div>
+      <div class="test-card-result">
+        <div class="result-title">你有多適合下列學校呢？</div>
+        <div class="resultScore-Chart"></div>
+        <div class="chartScore"></div>
+        <button class="resultBtn click-effect"></button>
+      </div>
+    </div>
+
+    <form class="login-container" id="login-form" style="display: none">
+      <div class="login-card" id="login-card">
+        <img class="login-logo" src="./img/FE_logo-4.png" alt="FE_logo" />
+        <input
+          type="email"
+          class="login-input"
+          id="form-input-mail"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          class="login-input"
+          id="form-input-password"
+          placeholder="Password"
+        />
+        <a class="login-forgetpassword">忘記密碼？</a>
+        <div class="register-login-btns">
+          <button
+            type="submit"
+            class="register-login-btn click-effect"
+            id="register-btn"
+          >
+            註冊
+          </button>
+          <button
+            type="submit"
+            class="register-login-btn click-effect"
+            id="login-btn-inner"
+          >
+            登入
+          </button>
+        </div>
+        <button class="login-google-btn click-effect" id="login-google-btn">
+          Log In With Gmail
+        </button>
+      </div>
+    </form>
+
+    <div class="alert" style="display: none">
+      <p class="alert-title"></p>
+      <p class="alert-content"></p>
+    </div>
+
+    <div class="skill-test-section" style="display: none">
+      <div class="test-card-green"></div>
+      <div class="test-card-gray"></div>
+      <div class="test-card-question">
+        <div class="question-title" id="question-title"></div>
+        <button
+          class="question-option click-effect"
+          id="question-option-1"
+        ></button>
+        <button
+          class="question-option click-effect"
+          id="question-option-2"
+        ></button>
+        <button
+          class="question-option click-effect"
+          id="question-option-3"
+        ></button>
+      </div>
+    </div>
+
+    <div
+      class="correct-answer-animation"
+      id="correct-answer-animation"
+      style="display: none"
+    >
+      <div class="correct-ans-text" id="correct-ans-text"></div>
+    </div>
+
+    <script type="module" src="scripts/common.js"></script>
+    <script type="module" src="scripts/firebase.js" defer></script>
+    <script type="module" src="scripts/contact.js" defer></script>
+    <script type="module" src="scripts/login.js" defer></script>
+  </body>
+</html>
