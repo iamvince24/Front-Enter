@@ -14,7 +14,7 @@
 }
 
 .article-keyvisual-content {
-  font-size: var(--text-size-h2);
+  font-size: var(--text-size-h2-1);
   color: white;
   font-weight: 400;
   letter-spacing: 10px;
@@ -126,6 +126,9 @@
 }
 
 @media (max-width: 1200px) {
+  .article-keyvisual-content {
+    font-size: var(--text-size-h2);
+  }
   .content-container {
     width: 100%;
     display: flex;
@@ -152,14 +155,25 @@
 }
 
 @media (max-width: 767px) {
+  .article-keyvisual-content {
+    letter-spacing: 5px;
+  }
+  .content-table-container {
+    letter-spacing: 1px;
+  }
   .content-text {
     line-height: 20px;
+    letter-spacing: 1px;
   }
   .tableRow {
     min-width: 250px;
   }
   .table-title {
     margin-right: 6vw;
+  }
+  .content-container img {
+    width: 250px;
+    height: 166px;
   }
 }
 

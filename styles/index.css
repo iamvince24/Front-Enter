@@ -123,6 +123,7 @@ aside img:hover {
   font-size: var(--text-size-h3);
   color: white;
   line-height: 5px;
+  letter-spacing: 1px;
 
   display: flex;
   flex-direction: column;
@@ -174,7 +175,7 @@ aside img:hover {
 
 .home-article-button {
   margin-top: 35px;
-  width: 250px;
+  width: 220px;
   height: 50px;
 
   color: var(--primary-color);
@@ -226,6 +227,7 @@ aside img:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* justify-content: flex-start; */
   align-items: center;
 }
 
@@ -246,8 +248,9 @@ aside img:hover {
 
 .home-information-card .content {
   width: 70%;
+  height: 90px;
   text-align: center;
-  font-size: var(--text-size-h3);
+  font-size: var(--text-size-h3-1);
   color: var(--text-color);
   line-height: 27px;
   margin-bottom: 20px;
@@ -259,12 +262,6 @@ aside img:hover {
   color: white;
   background: var(--primary-color);
   font-weight: 400;
-}
-
-.home-information-card-button:hover::after {
-  content: "  >>>";
-  font-size: var(--text-size-h3);
-  animation: colorChangeDark 1.2s infinite;
 }
 
 @keyframes colorChangeDark {
@@ -298,6 +295,7 @@ aside img:hover {
   .home-information-card .content {
     line-height: 20px;
     margin-bottom: 20px;
+    height: 60px;
   }
   .home-information-card-button {
     width: 100px;
@@ -360,7 +358,7 @@ aside img:hover {
     margin-bottom: 5px;
   }
   .home-about-content {
-    width: 90%;
+    width: 70%;
     font-size: var(--text-size-h3);
     line-height: 17px;
     margin-bottom: 20px;

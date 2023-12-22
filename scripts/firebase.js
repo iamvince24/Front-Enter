@@ -1,6 +1,6 @@
 import { firebaseConfig } from "./firebaseConfig.js";
 import { setRedirectLink } from "./utils.js";
-import { alertMessage } from "./common.js";
+import { alertMessage } from "./utils.js";
 
 // import { emailjs } from "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
 

@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
+.filter-btn:hover {
+  color: var(--primary-color);
+}
+
 .article-keyvisual {
   width: 100%;
   height: 380px;
@@ -51,7 +55,7 @@
 }
 
 .article-keyvisual-content {
-  font-size: var(--text-size-h2);
+  font-size: var(--text-size-h2-1);
   color: white;
   letter-spacing: 10px;
   padding: 10px 20px;
@@ -63,6 +67,7 @@
 @media (max-width: 767px) {
   .article-keyvisual-content {
     letter-spacing: 5px;
+    font-size: var(--text-size-h2);
   }
 }
 
@@ -111,7 +116,7 @@
   font-size: var(--text-size-h3);
 
   border: 1px solid var(--primary-color);
-
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,9 +185,11 @@
 }
 
 .articlelist-content .text {
+  height: 70px;
   padding: 0px 15px;
   line-height: 24px;
-  color: var(--third-color);
+  letter-spacing: 1px;
+  color: var(--text-color);
 }
 
 .articlelist-readmore {
@@ -247,7 +254,7 @@
     font-size: var(--text-size-h2);
   }
   .articlelist-content .title {
-    font-size: var(--text-size-h1);
+    font-size: var(--text-size-h1-1);
     margin: 15px 0px 10px;
   }
   .articlelist-content .text {
@@ -259,7 +266,7 @@
     margin: 5px 0px 20px 0px;
   }
   .readmore-word {
-    font-size: var(--text-size-h3);
+    font-size: var(--text-size-h2-1);
   }
   .readmore-arrow {
     height: 8px;

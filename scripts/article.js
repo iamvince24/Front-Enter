@@ -1,5 +1,5 @@
 import { setRedirectLink } from "./utils.js";
-import { writeUserData, readUserData, fetchData } from "./firebase.js";
+import { writeUserData, fetchData } from "./firebase.js";
 
 // Picture Running
 window.onload = function () {

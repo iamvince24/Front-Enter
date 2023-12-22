@@ -1,5 +1,5 @@
 import { contactMessage } from "./firebase.js";
-import { alertMessage } from "./common.js";
+import { alertMessage } from "./utils.js";
 
 const formButton = document.querySelector(".form-button");
 
