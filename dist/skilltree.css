@@ -1,3 +1,6 @@
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/css/skilltree.css ***!
+  \***********************************************************************************************************************************************/
 .keyvisual {
   width: 100%;
   height: 380px;
@@ -7,10 +10,21 @@
   background-position: center center;
   background-attachment: local;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   margin-bottom: 20px;
 }
@@ -28,8 +42,10 @@
 .skilltree-explain {
   width: 100%;
   height: 600px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
+    url(b0e8c632a295eaef1eeb.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/second-img.jpg");
+    url(b0e8c632a295eaef1eeb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
@@ -40,10 +56,21 @@
   color: white;
   line-height: 5px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .explain-title {
@@ -83,10 +110,19 @@
 
 .skilltree {
   margin: 50px auto 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skilltree-icon {
@@ -105,15 +141,20 @@
 }
 
 .icon-select {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
 .icon-select:hover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .skilltree-icon:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .icon-box {
@@ -125,12 +166,24 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1000;
 }
 
@@ -143,24 +196,47 @@
 }
 
 .icon-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .skilltree-container {
   position: relative;
   margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skilltree-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   margin: 10px 0px;
 
@@ -168,19 +244,37 @@
 }
 
 .skilltree-Interval-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5px 0px;
   gap: 67px;
 }
 
 .skilltree-Interval-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 0px;
   gap: 67px;
 }
@@ -192,21 +286,35 @@
   border: 1px solid var(--text-color);
   border-radius: 3px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+
+  transition: -webkit-transform 0.3s ease-out;
+
   transition: transform 0.3s ease-out;
+
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .skilltree-card:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .skilltree-card:active {
   border: 2px solid var(--text-color);
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .skilltree-card p {
@@ -222,12 +330,14 @@
 
 .skilltree-line-minus-45 {
   width: 50px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .skilltree-line-45 {
   width: 50px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .skilltree-line-level {
@@ -236,7 +346,8 @@
 
 .skilltree-line-vertical {
   width: 50px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .skilltree-content-card-center {
@@ -253,7 +364,9 @@
   top: 0px;
   left: 300px;
 
-  animation: cardShowup 0.4s ease-out;
+  -webkit-animation: cardShowup 0.4s ease-out;
+
+          animation: cardShowup 0.4s ease-out;
 }
 
 .skilltree-content-card-right {
@@ -270,7 +383,9 @@
   top: 5px;
   left: 400px;
 
-  animation: cardShowup 0.4s ease-out;
+  -webkit-animation: cardShowup 0.4s ease-out;
+
+          animation: cardShowup 0.4s ease-out;
 }
 
 .skilltree-content-card-left {
@@ -287,7 +402,18 @@
   top: 5px;
   right: 400px;
 
-  animation: cardShowup 0.4s ease-out;
+  -webkit-animation: cardShowup 0.4s ease-out;
+
+          animation: cardShowup 0.4s ease-out;
+}
+
+@-webkit-keyframes cardShowup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes cardShowup {
@@ -407,8 +533,14 @@
   /* display: none; */
   z-index: 1000;
 
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill-test-card-green {
@@ -427,13 +559,15 @@
   z-index: 3;
   border-radius: 5px;
 
-  background-image: url("../img/Staff-Selection.jpg");
+  background-image: url(eca6d4b3a1a98dcbff26.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
 
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+          filter: grayscale(100%);
   opacity: 0.15;
 }
 
@@ -442,9 +576,16 @@
   height: 450px;
   position: fixed;
   z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .question-title {
@@ -469,11 +610,32 @@
 }
 
 .question-option:hover {
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .shakeAnimation {
-  animation: 0.6s ease 0s 1 normal none running shake;
+  -webkit-animation: 0.6s ease 0s 1 normal none running shake;
+          animation: 0.6s ease 0s 1 normal none running shake;
+}
+
+@-webkit-keyframes shake {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
 }
 
 @keyframes shake {
@@ -482,14 +644,16 @@
   50%,
   70%,
   90% {
-    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
   20%,
   40%,
   60%,
   80%,
   100% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
@@ -502,8 +666,12 @@
   z-index: 1000;
   background: rgb(0, 0, 0, 0.7);
   /* display: flex; */
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .correct-ans-text {
@@ -537,3 +705,4 @@
     letter-spacing: 3px;
   }
 }
+
