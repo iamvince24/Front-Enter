@@ -2,21 +2,21 @@ import { setRedirectLink, stopPropagationHandler } from "./utils.js";
 import { fetchData } from "./firebase.js";
 
 // Loading handle
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".color-block-primary").style.transform = "scaleY(3)";
-  document.querySelector(".color-block-secondary").style.transform =
-    "scaleY(1.5)";
-  setTimeout(function () {
-    document.getElementById("loading-container").style.transform =
-      "translateY(-100%)";
-    setTimeout(function () {
-      var colorBlocks = document.querySelectorAll(".color-block");
-      colorBlocks.forEach(function (block) {
-        block.style.transform = "scaleY(0)";
-      });
-    }, 500);
-  }, 2000);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   document.querySelector(".color-block-primary").style.transform = "scaleY(3)";
+//   document.querySelector(".color-block-secondary").style.transform =
+//     "scaleY(1.5)";
+//   setTimeout(function () {
+//     document.getElementById("loading-container").style.transform =
+//       "translateY(-100%)";
+//     setTimeout(function () {
+//       var colorBlocks = document.querySelectorAll(".color-block");
+//       colorBlocks.forEach(function (block) {
+//         block.style.transform = "scaleY(0)";
+//       });
+//     }, 500);
+//   }, 2000);
+// });
 
 const data = await fetchData();
 const articleKeys = Object.keys(data.article);
